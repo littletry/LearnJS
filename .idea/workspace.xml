@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf900640-02fb-4967-a282-196b91d4e199" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_02/08_v-on.html" />
+    <list default="true" id="cf900640-02fb-4967-a282-196b91d4e199" name="Default" comment="Vue.js第三章学习完。">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_03/01_reversedText.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_03/02_packagePrices.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_03/03_fullName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_03/04_依赖其他实例的计算属性.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_03/05_reversedText2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_02/07_v-bind.html" afterPath="$PROJECT_DIR$/test_02/07_v-bind.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +18,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="01_reversedText.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_03/01_reversedText.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02_packagePrices.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_03/02_packagePrices.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03_fullName.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_03/03_fullName.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04_依赖其他实例的计算属性.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_03/04_依赖其他实例的计算属性.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05_reversedText2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_03/05_reversedText2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +98,12 @@
         <option value="$PROJECT_DIR$/test_02/06_v-if.html" />
         <option value="$PROJECT_DIR$/test_02/08_v-on.html" />
         <option value="$PROJECT_DIR$/test_02/07_v-bind.html" />
+        <option value="$PROJECT_DIR$/test_03/01_reversedText.html" />
+        <option value="$PROJECT_DIR$/test_03/02_packagePrise.html" />
+        <option value="$PROJECT_DIR$/test_03/02_packagePrices.html" />
+        <option value="$PROJECT_DIR$/test_03/03_fullName.html" />
+        <option value="$PROJECT_DIR$/test_03/04_依赖其他计算属性.html" />
+        <option value="$PROJECT_DIR$/test_03/05_reversedText2.html" />
       </list>
     </option>
   </component>
@@ -88,7 +148,7 @@
             <path>
               <item name="LearnVue" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnVue" type="462c0819:PsiDirectoryNode" />
-              <item name="test_02" type="462c0819:PsiDirectoryNode" />
+              <item name="test_03" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,6 +164,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="{&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -203,6 +264,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cf900640-02fb-4967-a282-196b91d4e199" name="Default" comment="" />
@@ -214,7 +278,7 @@
       <workItem from="1511445599242" duration="1425000" />
       <workItem from="1511447118985" duration="4473000" />
       <workItem from="1511532683115" duration="2873000" />
-      <workItem from="1511680561733" duration="867000" />
+      <workItem from="1511680561733" duration="5554000" />
     </task>
     <task id="LOCAL-00001" summary="Vue.js初步学习">
       <created>1511454494138</created>
@@ -237,11 +301,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511536440849</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Vue.js第二章学习完">
+      <created>1511681466696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511681466697</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9943000" />
+    <option name="totallyTimeSpent" value="14630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
@@ -258,7 +329,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20100144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20100144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -311,7 +382,8 @@
     <MESSAGE value="Vue.js初步学习" />
     <MESSAGE value="重新规范命名html页面文件" />
     <MESSAGE value="显示时间的页面、v-if、v-bind" />
-    <option name="LAST_COMMIT_MESSAGE" value="显示时间的页面、v-if、v-bind" />
+    <MESSAGE value="Vue.js第二章学习完" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue.js第二章学习完" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -524,6 +596,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_03/01_reversedText.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_03/02_packagePrices.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_03/03_fullName.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_03/04_依赖其他实例的计算属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_03/05_reversedText2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
         </state>
       </provider>

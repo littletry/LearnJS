@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reversedText2</title>
+</head>
+<!--使用计算属性还是method取决于你是否需要缓存，当遍历大数组和做大型计算时，应当使用计算属性，除非你不希望得到缓存。-->
+<body>
+    <div id="app">
+        <!--注意，这里的reversedText是方法，所以要带()-->
+        {{ reversedText() }}
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data:{
+                text:'123,456'
+            },
+            methods:{
+                reversedText:function () {
+                    //这里的this指向的是当前Vue实例
+                    return this.text.split(',').reverse().join(',');
+                }
+            }
+        })
+    </script>
+</body>
+</html>
