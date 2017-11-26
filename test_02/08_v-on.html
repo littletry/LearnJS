@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>v-on</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="show">这是一段文本</p>
+        <button v-on:click="handleClose">点击隐藏</button>
+        <button v-on:click="show = false">点击隐藏</button>
+        <!--语法糖形式简化代码书写-->
+        <button @click="handleClose">点击隐藏</button>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data:{
+                show:true
+            },
+            methods:{
+                handleClose:function () {
+                    this.show = false;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

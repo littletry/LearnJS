@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>v-bind</title>
@@ -8,6 +8,10 @@
     <div id="app">
         <a v-bind:href="url">链接</a>
         <img v-bind:src="imgUrl">
+        <!--语法糖形式简化代码书写-->
+        <a :href="url">链接</a>
+        <img :src="imgUrl">
+
     </div>
     <script src="../vue/vue.js"></script>
     <script>
