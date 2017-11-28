@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定计算属性的class</title>
+</head>
+<body>
+    <div id="app">
+        <div :class="classes"></div>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data:{
+                isActive:true,
+                error:null
+            },
+            computed:{
+              classes:function () {
+                  return{
+                      active:this.isActive && !this.error,
+                      'text-fail':this.error && this.error.type === 'fail'
+                  }
+              }
+            }
+        });
+    </script>
+</body>
+</html>
