@@ -2,13 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf900640-02fb-4967-a282-196b91d4e199" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_04/01_bind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_04/02_bind-class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_04/03_与普通class共存.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_04/04_绑定计算属性的class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_04/05_数组class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_04/06_三元表达式class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_04/07_数组中使用对象语法class.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/images/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/images/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/images/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/images/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/app.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/components/daily-article.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/components/item.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/directives/time.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/libs/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/proxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/daily/webpack.prod.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/app.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/button.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/title.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/demo/webpack.prod.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/app.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/button.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/title.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/views/about.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/views/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/views/user.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/router/webpack.prod.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/app.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/components/product.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/product.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/views/cart.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/views/list.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/views/product.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/shopping/webpack.prod.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/app.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/button.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/title.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/views/about.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/views/counter.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/views/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/views/user.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/vue-bus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vue-bus/webpack.prod.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/app.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/button.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/title.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/views/about.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/views/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/views/user.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-book-master/vuex/webpack.prod.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -107,6 +189,11 @@
             <path>
               <item name="LearnVue" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnVue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearnVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearnVue" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-book-master" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,7 +322,7 @@
       <workItem from="1511447118985" duration="4473000" />
       <workItem from="1511532683115" duration="2873000" />
       <workItem from="1511680561733" duration="5666000" />
-      <workItem from="1511882725373" duration="3111000" />
+      <workItem from="1511882725373" duration="3230000" />
     </task>
     <task id="LOCAL-00001" summary="Vue.js初步学习">
       <created>1511454494138</created>
@@ -272,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511686308508</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Vue.js第四章学习部分...">
+      <created>1511886282323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511886282323</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17853000" />
+    <option name="totallyTimeSpent" value="17972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
@@ -348,7 +442,8 @@
     <MESSAGE value="显示时间的页面、v-if、v-bind" />
     <MESSAGE value="Vue.js第二章学习完" />
     <MESSAGE value="Vue.js第三章学习完。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vue.js第三章学习完。" />
+    <MESSAGE value="Vue.js第四章学习部分..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue.js第四章学习部分..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
