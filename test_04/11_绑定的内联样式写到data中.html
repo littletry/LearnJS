@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定的内联样式写到data中</title>
+</head>
+<body>
+    <div id="app">
+        <div :style="styles">文本</div>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data:{
+                styles:{
+                    color:'red',
+                    fontSize:14+'px'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
