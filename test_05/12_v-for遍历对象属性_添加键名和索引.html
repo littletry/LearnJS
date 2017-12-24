@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遍历对象属性并添加键名和索引</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(value,key,index) in user">
+                {{index}} - {{key}}: {{value}}
+            </li>
+        </ul>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        var app = new Vue({
+           el:'#app',
+           data:{
+               user:{
+                   name:'Aresn',
+                   gender:'男',
+                   age:26
+               }
+           }
+        });
+    </script>
+</body>
+</html>
