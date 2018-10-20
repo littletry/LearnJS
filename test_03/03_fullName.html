@@ -8,7 +8,6 @@
     <div id="app">
         姓名：{{fullName}}
     </div>
-    <!--暂未搞懂这个怎么运行出结果-->
     <script src="../vue/vue.js"></script>
     <script>
         var app = new Vue({
@@ -31,7 +30,9 @@
                     }
                 }
             }
-        })
+        });
+        // 当执行 app.fullName = 'John Doe'时，setter就会被调用，
+        // 数据firstName和lastName都会相对更新，视图同样也会更新。
     </script>
 </body>
 </html>
