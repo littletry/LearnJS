@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域插槽</title>
+</head>
+<body>
+<!--作用域插槽更具代表性的用例是列表组件，允许组件自定义应该如何渲染列表每一项。-->
+<!--子组件 my-list接收一个来自父级的 prop数组 books， 并且将它在 name 为 book 的 slot上使用 v-for指令循环，同时暴露一个变量 bookName。-->
+    <div id="app">
+        <my-list :books="books">
+            <!-- 作用域插槽也可以是具名的 Slot-->
+            <template slot="book" scope="props">
+                <li>{{ props.bookName }}</li>
+            </template>
+        </my-list>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('my-list', {
+            props: {
+                books: {
+                    type: Array,
+                    default: function () {
+                        return [];
+                    }
+                }
+            },
+            template: '\
+            <ul>\
+                <slot name="book"\
+                      v-for="book in books"\
+                      :book-name="book.name">\
+                      <!--这里也可以写默认slot内容-->\
+                </slot>\
+            </ul>'
+        });
+        let app = new Vue({
+            el: '#app',
+            data: {
+                books: [
+                    {name: '《Vue.js实战》'},
+                    {name: '《JavaScript 语言精粹》'},
+                    {name: '《JavaScript 高级程序设计》'}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
