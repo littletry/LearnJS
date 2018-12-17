@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>判断是普通标签还是组件</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="handleRef">通过ref获取子组件实例</button>
+        <p ref="p">内容</p>
+        <child-component ref="child"></child-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('child-component', {
+            template: '<div>子组件</div>',
+            data: function () {
+                return {
+                    message: '子组件内容'
+                }
+            }
+        });
+        let app = new Vue({
+            el: '#app',
+            methods: {
+                handleRef: function () {
+                    //通过$refs来访问指定的实例
+                    let p = this.$refs.p;
+                    let child = this.$refs.child;
+                    console.log(p);
+                    console.log(child);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
