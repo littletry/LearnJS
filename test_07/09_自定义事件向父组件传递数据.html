@@ -5,6 +5,9 @@
     <title>自定义事件向父组件传递数据</title>
 </head>
 <body>
+<!--子组件有两个按钮，分别实现加 1 和减 1 的效果 ，在改变组件的 data “ counter" 后，通过$emit()再把它传递给父组件，
+父组件用 v-on:increase和 v-on:reduce(示例使用的是语法糖)。$emit()方法的第一个参数是自定义事件的名称 ，
+例如示例的 increase 和 reduce 后面的参数都是要传 递的数据，可以不填或填写多个。-->
     <div id="app">
         <p>总数：{{ total }}</p>
         <my-component @increase="handleGetTotal" @reduce="handleGetTotal"></my-component>
