@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-component2</title>
+</head>
+<body>
+<!--组件使用了3次， 给组件返回一个新的 data 对象来独立，这样，点击 3 个按钮就互不影响了，完全达到复用的目的。-->
+    <div id="app">
+        <my-component></my-component>
+        <my-component></my-component>
+        <my-component></my-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        let data = {
+            counter: 0
+        };
+        Vue.component('my-component', {
+            template: '<button @click="counter++">{{ counter }}</button>',
+            data: function () {
+                return {
+                    counter: 0
+                };
+            }
+        });
+        let app = new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-component1</title>
+</head>
+<body>
+<!--组件使用了3次， 但是点击任意一个<button>, 3个的数字都会加 1，那是因为组件的data引用的是外部的对象-->
+    <div id="app">
+        <my-component></my-component>
+        <my-component></my-component>
+        <my-component></my-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        let data = {
+            counter: 0
+        };
+        Vue.component('my-component', {
+            template: '<button @click="counter++">{{ counter }}</button>',
+            data: function () {
+                return data;
+            }
+        });
+        let app = new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>
