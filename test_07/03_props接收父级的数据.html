@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>props接收父级数据</title>
+</head>
+<body>
+    <div id="app">
+        <my-component message="来自父组件的数据"></my-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('my-component', {
+           props: ['message'],
+           template: '<div>{{ message }}</div>'
+        });
+        let app = new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>

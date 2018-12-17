@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>直接传递字符串</title>
+</head>
+<body>
+<!--直接传递数字、布尔值、数组、对象，而且不使用 v-bind，传递的仅是字符串-->
+    <div id="app">
+        <my-component message="[1,2,3]"></my-component>
+        <my-component :message="[1,2,3]"></my-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('my-component', {
+            props: ['message'],
+            template: '<div>{{ message.length }}</div>'
+        });
+        let app = new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>

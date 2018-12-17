@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>props接收父级数据-短横线命名</title>
+</head>
+<body>
+    <div id="app">
+        <my-component warning-text="提示信息"></my-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('my-component', {
+           props: ['warningText'],
+           template: '<div>{{ warningText }}</div>'
+        });
+        let app = new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>

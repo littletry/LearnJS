@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>props接收父级数据v-bind动态绑定</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="parentMessage">
+        <div>{{parentMessage}}</div>
+        <my-component :message="parentMessage"></my-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('my-component', {
+            props: ['message'],
+            template: '<div>{{ message }}</div>'
+        });
+        let app = new Vue({
+            el: '#app',
+            data: {
+                parentMessage: ''
+            }
+        })
+    </script>
+</body>
+</html>
