@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--业务中会经常遇到两种需要改变 prop 的情况，一种是父组件传递初始值进来，子组件将它作 为初始值保存起来，在自己的作用域下可以随意使用和修改。
+这种情况可以在组件 data 内再声明一个数据，引用父组件的 prop。-->
+    <div id="app">
+        <my-component :init-count="1"></my-component>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('my-component', {
+            props: ['initCount'],
+            template: '<div>{{ count }}</div>',
+            data: function () {
+                return {
+                    count: this.initCount
+                }
+            }
+        });
+        let app = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+</html>
