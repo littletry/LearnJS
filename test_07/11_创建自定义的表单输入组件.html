@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建自定义的表单输入组件</title>
+</head>
+<body>
+<!--v-model可以用来创建自定义的表单输入组件，进行数据双向绑定-->
+<!--实现这样一个具有双向绑定的 v-model组件要满足下面两个要求:
+        接收一个 value属性。
+        在有新的 value 时触发 input事件。-->
+    <div id="app">
+        <p>总数：{{ total }}</p>
+        <my-component v-model="total"></my-component>
+        <button @click="handleReduce">-1</button>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.component('my-component', {
+            props: ['value'],
+            template: '<input :value="total" @input="updateValue">',
+            methods: {
+                updateValue: function (event) {
+                    this.$emit('input', event.target.value);
+                }
+            }
+        });
+        let app = new Vue({
+            el: '#app',
+            data: {
+                total: 0
+            },
+            methods: {
+                handleReduce: function () {
+                    this.total--;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
