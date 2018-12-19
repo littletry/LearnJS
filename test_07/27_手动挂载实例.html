@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手动挂载实例</title>
+</head>
+<body>
+    <!--手动挂载实例(组件)是一种比较极端的高级用法，在业务中几乎用不到，只在开发一些复杂的独立组件时可能会使用，所以只做了解就好。-->
+    <div id="mount-div">
+
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        let MyComponent = Vue.extend({
+            template: '<div>Hello: {{ name }}</div>',
+            data: function () {
+                return {
+                    name: 'Aresn'
+                }
+            }
+        });
+        /*1、*/
+        new MyComponent().$mount('#mount-div');
+        /*2、*/
+        new MyComponent({
+            el: '#mount-div'
+        });
+        /*3、*/
+        let component = new MyComponent().$mount();
+        document.getElementById('mount-div').appendChild(component.$el);
+    </script>
+</body>
+</html>
