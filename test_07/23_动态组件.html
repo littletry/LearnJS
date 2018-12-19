@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态组件</title>
+</head>
+<body>
+    <!--动态地改变 currentView 的值可以动态挂载组件-->
+    <div id="app">
+        <component :is="currentView"></component>
+        <button @click="handleChangeView('A')">切换到A</button>
+        <button @click="handleChangeView('B')">切换到B</button>
+        <button @click="handleChangeView('C')">切换到C</button>
+    </div>
+    <!--直接绑定在组件对象上-->
+    <div id="app-2">
+        <comment :is="currentView"></comment>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            components: {
+                comA: {
+                    template: '<div>组件A</div>'
+                },
+                comB: {
+                    template: '<div>组件B</div>'
+                },
+                comC: {
+                    template: '<div>组件C</div>'
+                }
+            },
+            data: {
+                currentView: 'comA'
+            },
+            methods: {
+                handleChangeView: function (component) {
+                    this.currentView = 'com' + component;
+                }
+            }
+        });
+        let Home = {
+            template: '<p>Welcome home!</p>'
+        };
+        const app2 = new Vue({
+            el: '#app-2',
+            data: {
+                currentView: Home
+            }
+        });
+    </script>
+</body>
+</html>
