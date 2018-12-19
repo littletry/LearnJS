@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$nextTick</title>
+</head>
+<body>
+    <div id="app">
+        <div id="div" v-if="showDiv">这是一段文本</div>
+        <button @click="getText">获取div内容</button>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                showDiv: false
+            },
+            methods: {
+                getText: function () {
+                    this.showDiv = true;
+                    /*事实上，在执行this.showDiv=true同时，div仍然还是没有被创建出来，直到下一个Vue事件循环时，才开始创建。
+                      $nextTick就是用来知道什么时候DOM更新完成的*/
+                    this.$nextTick(function () {
+                        let text = document.getElementById('div').innerHTML;
+                        console.log(text);
+                    });
+                }
+            }
+        })
+    </script>
+    <!--理论上，我们应该不用去主动操作DOM，因为Vue的核心思想就是数据驱动DOM，但在很多业务里，我们避免不了会使用一些第三方库，
+        比如popper.js( https://popper.js.org/)、swiper(http://idangero.us/swiper/)等，
+        这些基于原生JavaScript的库都有创建和更新及销毁的完整生命周期，与Vue配合使用时，就要利用好$nextTick。-->
+</body>
+</html>
