@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-test="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指令的钩子函数所包含的几个参数</title>
+</head>
+<body>
+    <div id="app">
+        <div v-test:msg.a.b="message"></div>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.directive('test', {
+            bind: function (el, binding, vnode) {
+                let keys = [];
+                for (let i in vnode) {
+                    keys.push(i);
+                }
+                el.innerHTML =
+                        'name: ' + binding.name + '<br>' +
+                        'value: ' + binding.value + '<br>' +
+                        'expression: ' + binding.expression + '<br>' +
+                        'argument: ' + binding.arg + '<br>' +
+                        'modifiers: ' + JSON.stringify(binding.modifiers) + '<br>' +
+                        'vnode keys: ' + keys.join(', ');
+            }
+        });
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: 'some text'
+            }
+        })
+    </script>
+</body>
+</html>
