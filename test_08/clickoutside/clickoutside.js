@@ -8,11 +8,11 @@ Vue.directive('clickoutside', {
                 binding.value(e);
             }
         }
-        el._vueClickOutSide_ = documentHandler;
+        el.__vueClickOutSide__ = documentHandler;
         document.addEventListener('click', documentHandler);
     },
     unbind: function (el, binding) {
-        document.removeEventListener('click', el._vueClickOutSide_);
-        delete el._vueClickOutSide_;
+        document.removeEventListener('click', el.__vueClickOutSide__);
+        delete el.__vueClickOutSide__;
     }
 });
