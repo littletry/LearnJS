@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指令传入一个JavaScript对象字面量</title>
+</head>
+<body>
+    <!--如果需要多个值 ， 自定义指令也可以传入一个 JavaScript 对象字面量 ， 只要是合法类型的 JavaScript 表达式都是可以的-->
+    <div id="app">
+        <div v-test="{msg: 'hello', name: 'Aresn'}"></div>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.directive('test', {
+            bind: function (el, binding, vnode) {
+                console.log(binding.value.msg);
+                console.log(binding.value.name);
+            }
+        });
+        const app = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+</html>
