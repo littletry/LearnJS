@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指令focus</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-focus>
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        Vue.directive('focus',{
+            inserted: function (el) {
+                //聚焦元素
+                el.focus();
+            }
+        });
+        const app = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+</html>
