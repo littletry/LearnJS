@@ -14,11 +14,24 @@ let config = {
     module: {
         rules: [
             {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options: {
+                    loaders: {
+                        css: ExtractTextPlugin.extract({
+                            use: 'css-loader',
+                            fallback: 'vue-style-loader'
+                        })
+                    }
+                }
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/
+            },
+            {
                 test: /\.css$/,
-                // use: [
-                //     'style-loader',
-                //     'css-loader'
-                // ]
                 use: ExtractTextPlugin.extract({
                     use: 'css-loader',
                     fallback: 'style-loader'
