@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --host 127.0.0.1 --port 8088 --open --config webpack.config.js"
+    "dev": "webpack-dev-server --host 127.0.0.1 --port 8088 --open --config webpack.config.js",
+    "build": "webpack --progess --hide-modules --config webpack.prod.config.js",
+    "production": "webpack --mode production"
   },
   "author": "ht",
   "license": "ISC",
