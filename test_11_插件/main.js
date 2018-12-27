@@ -47,6 +47,7 @@ const router = new VueRouter(RouterConfig);
 // 所以设置标题可以在beforeEach钩子完成。
 router.beforeEach((to, from, next) => {
     window.document.title = to.meta.title;
+    ////next()的参数设置为 false时，可以取消导航，设置为具体的路径可以导航到指定的页面。
     next();
 });
 //一个页面较长，滚动到某个位置，再跳转到另一个页面，滚动条默认是在上一个页面停留的位置，而好的体验肯定是能返回顶端。
