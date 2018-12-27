@@ -8,6 +8,8 @@
         <button @click="handleDecrease">-1</button>
         <button @click="handleIncrementMore">+5</button>
         <button @click="incrementObject">+10</button>
+        <div>{{ list }}</div>
+        <div>{{ listCount }}</div>
     </div>
 </template>
 
@@ -15,21 +17,27 @@
     export default {
         name: "index",
         computed: {
-            count(){
+            count() {
                 return this.$store.state.count;
+            },
+            list() {
+                return this.$store.getters.filteredList;
+            },
+            listCount() {
+                return this.$store.getters.listCount;
             }
         },
         methods: {
-            handleDecrease(){
+            handleDecrease() {
                 this.$store.commit('decrease');
             },
-            handleIncrement(){
+            handleIncrement() {
                 this.$store.commit('increment');
             },
-            handleIncrementMore(){
+            handleIncrementMore() {
                 this.$store.commit('increment', 5);
             },
-            incrementObject(){
+            incrementObject() {
                 this.$store.commit({
                     type: 'incrementObject',
                     count: 10

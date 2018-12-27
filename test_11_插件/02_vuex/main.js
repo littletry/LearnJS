@@ -62,11 +62,20 @@ router.afterEach((to, from, next) => {
 //vuex配置
 const store = new Vuex.Store({
     state: {
-        count: 0
+        count: 0,
+        list: [1, 5, 8, 10, 30, 50]
+    },
+    getters: {
+        filteredList: state => {
+            return state.list.filter(item => item < 10);
+        },
+        listCount: (state, getters) => {
+            return getters.filteredList.length;
+        }
     },
     //在组件内，来自 store 的数据只能读取，不能手动改变，改变 store 中数据的唯一途径就是显式 地提交 mutations。
     mutations: {
-        increment (state, n = 1) {
+        increment(state, n = 1) {
             state.count += n;
         },
         decrease(state) {
@@ -74,7 +83,7 @@ const store = new Vuex.Store({
         },
         //当一个参数不够用时，可以传入一个对象，无限扩展 。
         //提交 mutation 的另一种方式是直接使用包含 type属性的对象,比如
-        incrementObject(state,params) {
+        incrementObject(state, params) {
             state.count += params.count;
         }
     }
