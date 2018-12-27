@@ -2,14 +2,14 @@ let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 let merge = require('webpack-merge');
-let webpackBaseConfig = require('./webpack.config');
+let webpackBaseConfig = require('./webpack.config.js');
 
 //清空基本配置的插件列表
 webpackBaseConfig.plugins = [];
 
 module.exports = merge(webpackBaseConfig, {
     output: {
-        publishPath: '/dist',
+        publicPath: '/dist',
         //将入口文件重命名为带有20位hash值的唯一文件
         filename: '[name].[hash].js'
     },

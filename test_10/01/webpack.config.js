@@ -1,6 +1,5 @@
 let path = require('path');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
-let VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 let config = {
     entry: {
@@ -46,9 +45,10 @@ let config = {
         ]
     },
     plugins: [
-        //重命名提取后的css文件
-        new ExtractTextPlugin("main.css"),
-        new VueLoaderPlugin()
+        new ExtractTextPlugin({
+            filename: '[name].css',
+            allChunks: true
+        })
     ]
 };
 
