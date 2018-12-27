@@ -5,11 +5,14 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 //导入vuex
 import Vuex from 'vuex';
+//导入vue-bus
+import VueBus from './vue-bus';
 //导入app.vue组件
 import App from './app.vue';
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
+Vue.use(VueBus);
 
 //路由配置
 const Routers = [
