@@ -86,6 +86,21 @@ const store = new Vuex.Store({
         incrementObject(state, params) {
             state.count += params.count;
         }
+    },
+    //上一节提到， mutation里不应该异步操作数据，所以有了 actions选项。
+    //action与 mutation很像， 不同的是 action 里面提交的是 mutation， 井且可 以异步操作业务逻辑 。
+    actions: {
+        increment(context) {
+            context.commit('increment');
+        },
+        asyncIncrement(context) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    context.commit('increment');
+                    resolve();
+                }, 1000)
+            });
+        }
     }
 });
 

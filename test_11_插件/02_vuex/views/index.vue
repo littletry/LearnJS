@@ -10,6 +10,8 @@
         <button @click="incrementObject">+10</button>
         <div>{{ list }}</div>
         <div>{{ listCount }}</div>
+        <button @click="handleActionIncrement">action +1</button>
+        <button @click="handleAsyncIncrement">async +1</button>
     </div>
 </template>
 
@@ -41,6 +43,14 @@
                 this.$store.commit({
                     type: 'incrementObject',
                     count: 10
+                });
+            },
+            handleActionIncrement() {
+                this.$store.dispatch('increment');
+            },
+            handleAsyncIncrement() {
+                this.$store.dispatch('asyncIncrement').then(() => {
+                    console.log(this.$store.state.count);
                 });
             }
         }
