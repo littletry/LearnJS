@@ -1,13 +1,17 @@
 import './style.css';
 //导入vue框架
 import Vue from 'vue';
-
+//导入vue-router
 import VueRouter from 'vue-router';
+//导入vuex
+import Vuex from 'vuex';
 //导入app.vue组件
 import App from './app.vue';
 
 Vue.use(VueRouter);
+Vue.use(Vuex);
 
+//路由配置
 const Routers = [
     {
         path: '/index',
@@ -55,11 +59,33 @@ router.afterEach((to, from, next) => {
     window.scrollTo(0, 0);
 });
 
+//vuex配置
+const store = new Vuex.Store({
+    state: {
+        count: 0
+    },
+    //在组件内，来自 store 的数据只能读取，不能手动改变，改变 store 中数据的唯一途径就是显式 地提交 mutations。
+    mutations: {
+        increment (state, n = 1) {
+            state.count += n;
+        },
+        decrease(state) {
+            state.count--;
+        },
+        //当一个参数不够用时，可以传入一个对象，无限扩展 。
+        //提交 mutation 的另一种方式是直接使用包含 type属性的对象,比如
+        incrementObject(state,params) {
+            state.count += params.count;
+        }
+    }
+});
+
 document.getElementById('app').innerHTML = 'Hello webpack';
 
 //创建Vue根实例
 new Vue({
     el: '#app',
     router: router,
+    store: store,
     render: h => h(App)
 });
